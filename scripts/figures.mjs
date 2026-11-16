@@ -41,8 +41,12 @@ export function figures({ T, products, rendered, contrast, font }) {
       ["Site", Object.keys(products).filter((k) => products[k].tier === "site")],
       ["Lab tools", Object.keys(products).filter((k) => products[k].tier === "lab")],
     ];
-    const [s, gap, groupGap, pad] = [58, 12, 34, 32];
-    const width = groups.reduce((a, [, ks]) => a + ks.length * s + (ks.length - 1) * gap, 0) + groupGap * (groups.length - 1);
+    const [gap, groupGap, pad] = [12, 34, 32];
+    const n = groups.reduce((a, [, ks]) => a + ks.length, 0);
+    // Icons shrink as products are added, so the row always fits with a margin each side.
+    const fixed = groups.reduce((a, [, ks]) => a + (ks.length - 1) * gap, 0) + groupGap * (groups.length - 1);
+    const s = Math.min(58, Math.floor((W - 2 * 40 - fixed) / n));
+    const width = n * s + fixed;
     const x0 = (W - width) / 2;
     const row = (mode, y) => {
       const m = modes[mode];
