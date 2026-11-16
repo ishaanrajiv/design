@@ -13,7 +13,7 @@ The marks identify my apps, so they aren't covered by the MIT licence:
 - the mark drawings in `marks/marks.mjs` (the `MARKS` entries), and the files rendered from them in `marks/out/`
 - Avia's tent art in `marks/avia/`
 - the figures in `docs/img/`, where they show those marks
-- the product names Lyrate, Avia and Tern
+- the product names Lyrate, Avia, Tern, Paperside and Hocin
 
 You're welcome to look at them, link to them and write about them. Please don't use them, or anything confusingly similar, as the icon, logo or name of your own app or product, or in a way that suggests I endorse it.
 

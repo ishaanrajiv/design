@@ -32,7 +32,7 @@ Each product has one accent, taken from its own world and kept at a pastel light
 
 ![A hue wheel placing each accent, and a table of each product's dark accent and the three light shades derived from it](img/accents.svg)
 
-The darker light shades are more saturated than the pastels (the Throw's tint is `#2B60EC`); that's the price of readable text on a light ground. Judge it on a real screen before changing the rule.
+The darker light shades are more saturated than the pastels (Hocin's tint is `#2B60EC`); that's the price of readable text on a light ground. Judge it on a real screen before changing the rule.
 
 Market apps and the site must stay apart from each other on the colour wheel; lab tools may overlap. Every value is in [products.md](products.md).
 

@@ -63,34 +63,34 @@ public enum Design {
         public static let site = Color.design(light: 0x2690D4, dark: 0x7DBEE8)
         /// Site: the tint, for tab selection, toggles, progress and links (4.5:1 on light ground).
         public static let siteTint = Color.design(light: 0x1E71A7, dark: 0x7DBEE8)
-        /// Panels: marks and graphics (3:1 on light ground).
-        public static let panels = Color.design(light: 0xE2462F, dark: 0xE2462F)
-        /// Panels: the tint, for tab selection, toggles, progress and links (4.5:1 on light ground).
-        public static let panelsTint = Color.design(light: 0xCA321C, dark: 0xE2462F)
-        /// Throw: marks and graphics (3:1 on light ground).
-        public static let `throw` = Color.design(light: 0x5A83F0, dark: 0x84A3F4)
-        /// Throw: the tint, for tab selection, toggles, progress and links (4.5:1 on light ground).
-        public static let throwTint = Color.design(light: 0x2B60EC, dark: 0x84A3F4)
-        /// Dish: marks and graphics (3:1 on light ground).
-        public static let dish = Color.design(light: 0x7A9134, dark: 0xBBD07C)
-        /// Dish: the tint, for tab selection, toggles, progress and links (4.5:1 on light ground).
-        public static let dishTint = Color.design(light: 0x607329, dark: 0xBBD07C)
-        /// Shelf: marks and graphics (3:1 on light ground).
-        public static let shelf = Color.design(light: 0xAC8232, dark: 0xD4B06A)
-        /// Shelf: the tint, for tab selection, toggles, progress and links (4.5:1 on light ground).
-        public static let shelfTint = Color.design(light: 0x886727, dark: 0xD4B06A)
-        /// Book: marks and graphics (3:1 on light ground).
-        public static let book = Color.design(light: 0x3D9791, dark: 0x6CC4BE)
-        /// Book: the tint, for tab selection, toggles, progress and links (4.5:1 on light ground).
-        public static let bookTint = Color.design(light: 0x307772, dark: 0x6CC4BE)
-        /// Cited line: marks and graphics (3:1 on light ground).
-        public static let cited = Color.design(light: 0x3D9782, dark: 0x5FBFA8)
-        /// Cited line: the tint, for tab selection, toggles, progress and links (4.5:1 on light ground).
-        public static let citedTint = Color.design(light: 0x307867, dark: 0x5FBFA8)
-        /// Tyre: marks and graphics (3:1 on light ground).
-        public static let tyre = Color.design(light: 0x9E68FF, dark: 0xB58CFF)
-        /// Tyre: the tint, for tab selection, toggles, progress and links (4.5:1 on light ground).
-        public static let tyreTint = Color.design(light: 0x803AFF, dark: 0xB58CFF)
+        /// Paperside: marks and graphics (3:1 on light ground).
+        public static let paperside = Color.design(light: 0xE2462F, dark: 0xE2462F)
+        /// Paperside: the tint, for tab selection, toggles, progress and links (4.5:1 on light ground).
+        public static let papersideTint = Color.design(light: 0xCA321C, dark: 0xE2462F)
+        /// Hocin: marks and graphics (3:1 on light ground).
+        public static let hocin = Color.design(light: 0x5A83F0, dark: 0x84A3F4)
+        /// Hocin: the tint, for tab selection, toggles, progress and links (4.5:1 on light ground).
+        public static let hocinTint = Color.design(light: 0x2B60EC, dark: 0x84A3F4)
+        /// Homelab: marks and graphics (3:1 on light ground).
+        public static let homelab = Color.design(light: 0x7A9134, dark: 0xBBD07C)
+        /// Homelab: the tint, for tab selection, toggles, progress and links (4.5:1 on light ground).
+        public static let homelabTint = Color.design(light: 0x607329, dark: 0xBBD07C)
+        /// Library: marks and graphics (3:1 on light ground).
+        public static let library = Color.design(light: 0xAC8232, dark: 0xD4B06A)
+        /// Library: the tint, for tab selection, toggles, progress and links (4.5:1 on light ground).
+        public static let libraryTint = Color.design(light: 0x886727, dark: 0xD4B06A)
+        /// Books: marks and graphics (3:1 on light ground).
+        public static let books = Color.design(light: 0x3D9791, dark: 0x6CC4BE)
+        /// Books: the tint, for tab selection, toggles, progress and links (4.5:1 on light ground).
+        public static let booksTint = Color.design(light: 0x307772, dark: 0x6CC4BE)
+        /// Primer: marks and graphics (3:1 on light ground).
+        public static let primer = Color.design(light: 0x3D9782, dark: 0x5FBFA8)
+        /// Primer: the tint, for tab selection, toggles, progress and links (4.5:1 on light ground).
+        public static let primerTint = Color.design(light: 0x307867, dark: 0x5FBFA8)
+        /// Undercut: marks and graphics (3:1 on light ground).
+        public static let undercut = Color.design(light: 0x9E68FF, dark: 0xB58CFF)
+        /// Undercut: the tint, for tab selection, toggles, progress and links (4.5:1 on light ground).
+        public static let undercutTint = Color.design(light: 0x803AFF, dark: 0xB58CFF)
     }
 }
 

@@ -153,8 +153,8 @@
       },
       "contrastOnDark": 9.9
     },
-    "panels": {
-      "name": "Panels",
+    "paperside": {
+      "name": "Paperside",
       "tier": "market",
       "accent": "#E2462F",
       "mark": "Four comic panels; the top-right one lit.",
@@ -167,11 +167,11 @@
       },
       "contrastOnDark": 4.9
     },
-    "throw": {
-      "name": "Throw",
+    "hocin": {
+      "name": "Hocin",
       "tier": "market",
       "accent": "#84A3F4",
-      "mark": "A projector's beam in three even bands, running at full strength from an ink tip to the screen's blue, landing on a slim lit screen. The beam is also Play.",
+      "mark": "The Throw: a projector's beam in three even bands, running at full strength from an ink tip to the screen's blue, landing on a slim lit screen. The beam is also Play.",
       "shades": {
         "dark": "#84A3F4",
         "lightGraphic": "#5A83F0",
@@ -181,11 +181,11 @@
       },
       "contrastOnDark": 8.1
     },
-    "dish": {
-      "name": "Dish",
+    "homelab": {
+      "name": "Homelab",
       "tier": "lab",
       "accent": "#BBD07C",
-      "mark": "A ring, three lit dots, one in the accent, two off.",
+      "mark": "The dish: a ring, three lit dots, one in the accent, two off.",
       "shades": {
         "dark": "#BBD07C",
         "lightGraphic": "#7A9134",
@@ -195,17 +195,17 @@
       },
       "contrastOnDark": 11.9
     },
-    "face": {
-      "name": "Face",
+    "otto": {
+      "name": "Otto",
       "tier": "lab",
       "accent": null,
-      "mark": "A cream head with two pill eyes. An avatar inside another tool, not an app icon."
+      "mark": "A cream head with two pill eyes. Lives in Homelab; not an app icon."
     },
-    "shelf": {
-      "name": "Shelf",
+    "library": {
+      "name": "Library",
       "tier": "lab",
       "accent": "#D4B06A",
-      "mark": "Three spines stepping down, the fourth leaning in the accent.",
+      "mark": "A shelf: three spines stepping down, the fourth leaning in the accent.",
       "shades": {
         "dark": "#D4B06A",
         "lightGraphic": "#AC8232",
@@ -215,8 +215,8 @@
       },
       "contrastOnDark": 9.7
     },
-    "book": {
-      "name": "Book",
+    "books": {
+      "name": "Books",
       "tier": "lab",
       "accent": "#6CC4BE",
       "mark": "An open book, its pages and cover dipping to the spine, with a bookmark ribbon in the accent. Shares Lyrate's sea glass: both are for reading.",
@@ -229,11 +229,11 @@
       },
       "contrastOnDark": 9.8
     },
-    "cited": {
-      "name": "Cited line",
+    "primer": {
+      "name": "Primer",
       "tier": "lab",
       "accent": "#5FBFA8",
-      "mark": "A page of lines with one cited passage lit.",
+      "mark": "The cited line: a page of lines with one cited passage lit.",
       "shades": {
         "dark": "#5FBFA8",
         "lightGraphic": "#3D9782",
@@ -243,8 +243,8 @@
       },
       "contrastOnDark": 9.1
     },
-    "tyre": {
-      "name": "Tyre",
+    "undercut": {
+      "name": "Undercut",
       "tier": "lab",
       "accent": "#B58CFF",
       "mark": "A tyre in dark rubber with its compound band in the accent.",

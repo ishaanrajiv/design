@@ -4,12 +4,12 @@
 
 Every mark is drawn on a 100×100 grid and follows four rules.
 
-1. **Units.** Two to seven flat pieces with rounded corners (1.6 to 4.5 on the grid), circles or pills. No type, no gradients inside the mark. Two marks are made of letters, the site's initials and Tern's t, and both are drawn as pieces, not set in a face (decisions.md). A ring or a band is allowed when it is the thing itself (the dish, the tyre).
-2. **One lit.** One piece is the product's accent. The rest are the ink colour stepping down the ladder: **1 · 0.9 · 0.6 · 0.32 · 0.2**. A product with no accent (the face) lights its brightest piece in full ink. Two exceptions fade at full strength from ink to the accent instead: Lyrate's pages, from an ink front page to an accent back page, which keeps the bright leading edge its fan was known for; and the Throw's beam, from an ink tip to the blue of the screen it lands on (decisions.md).
+1. **Units.** Two to seven flat pieces with rounded corners (1.6 to 4.5 on the grid), circles or pills. No type, no gradients inside the mark. Two marks are made of letters, the site's initials and Tern's t, and both are drawn as pieces, not set in a face (decisions.md). A ring or a band is allowed when it is the thing itself (Homelab's dish, Undercut's tyre).
+2. **One lit.** One piece is the product's accent. The rest are the ink colour stepping down the ladder: **1 · 0.9 · 0.6 · 0.32 · 0.2**. A product with no accent (Otto) lights its brightest piece in full ink. Two exceptions fade at full strength from ink to the accent instead: Lyrate's pages, from an ink front page to an accent back page, which keeps the bright leading edge its fan was known for; and Hocin's Throw, from an ink tip to the blue of the screen it lands on (decisions.md).
 
    ![The opacity ladder in dark and light mode, beside a mark built from one lit piece and three steps of the ladder](img/ladder.svg)
 3. **Live area.** The mark sits in the middle ~62% of the tile (roughly 19 to 81 on the grid).
-4. **Tells you what it is.** Each mark comes from the product's world: Lyrate's riffled pages, Avia's tent, Tern's t and cursor, the site's initials, a comic's panels, a projector's beam, a dish of lights, a shelf, an open book, a cited passage, a tyre.
+4. **Tells you what it is.** Each mark comes from the product's world: Lyrate's riffled pages, Avia's tent, Tern's t and cursor, the site's initials, Paperside's comic panels, Hocin's projector beam, Homelab's dish of lights, Library's shelf, Books' open book, Primer's cited passage, Undercut's tyre.
 
 ## Four renderings
 
