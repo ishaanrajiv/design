@@ -210,7 +210,7 @@ export function figures({ T, products, rendered, contrast, font }) {
   {
     const pane = (mode, x) => {
       const { g, t, ink, label } = modes[mode];
-      const p = products.panels;
+      const p = products.paperside;
       const lit = mode === "dark" ? p.shades.dark : p.shades.lightGraphic;
       const steps = [["lit", lit, 1], ...M.ladder.map((o) => [String(o), ink, o])];
       let body = rect(x, 0, 428, 230, 20, g.ground, ` stroke="${g.line}"`);
@@ -220,7 +220,7 @@ export function figures({ T, products, rendered, contrast, font }) {
         body += rect(sx, 56, 36, 110, 8, fill, ` opacity="${o}"`);
         body += text(sx + 18, 186, name, { size: 11, fill: t.secondary, family: MONO, anchor: "middle" });
       });
-      body += place(rendered.panels[`mark-${mode}`], x + 300, 64, 104);
+      body += place(rendered.paperside[`mark-${mode}`], x + 300, 64, 104);
       body += text(x + 352, 196, "one lit, three on the ladder", { size: 11, fill: t.secondary, anchor: "middle" });
       return body;
     };

@@ -4,7 +4,7 @@ The design language behind my apps: how their marks are built, which colour does
 
 ![Every mark, as its dark and light app icon, grouped into market apps, the site and lab tools](docs/img/marks.svg)
 
-Lyrate, Avia and Tern are out; the other apps and tools haven't launched, so they go by the name of their mark.
+Lyrate, Avia and Tern are out; Paperside and Hocin haven't launched yet. The lab tools (Homelab, Otto, Library, Books, Primer and Undercut) are only for me.
 
 ## The system in six lines
 
@@ -37,11 +37,11 @@ Four layers per appearance. They stay ours everywhere, including the sheets and 
 
 ### Accents
 
-Each product has one accent, taken from its own world (the comic's red, the tent's clay, the tyre's compound band) and kept at a pastel lightness, 4.9:1 or more on Night. The build derives every light-mode shade, so nobody picks them by hand. The light graphic shade is 3:1 on Light paper, for marks and controls. The light tint is 4.5:1, because a tint often colours text. The light tile is the accent washed 14% into cream.
+Each product has one accent, taken from its own world (Paperside's comic red, Avia's tent clay, Undercut's tyre compound) and kept at a pastel lightness, 4.9:1 or more on Night. The build derives every light-mode shade, so nobody picks them by hand. The light graphic shade is 3:1 on Light paper, for marks and controls. The light tint is 4.5:1, because a tint often colours text. The light tile is the accent washed 14% into cream.
 
 ![A hue wheel placing each accent, and a table of each product's dark accent and the three light shades derived from it](docs/img/accents.svg)
 
-Market apps and the site sit on a phone's home screen together, so they're kept apart on the wheel. Where two are close, as the comic's red and Avia's terracotta are, they differ in lightness and shape. Lab tools are only for me and may overlap with anything. Every value is in [docs/products.md](docs/products.md).
+Market apps and the site sit on a phone's home screen together, so they're kept apart on the wheel. Where two are close, as Paperside's red and Avia's terracotta are, they differ in lightness and shape. Lab tools are only for me and may overlap with anything. Every value is in [docs/products.md](docs/products.md).
 
 ## Marks
 
@@ -49,7 +49,7 @@ Every mark is drawn in code on a 100×100 grid from two to seven flat pieces. On
 
 ![The opacity ladder in dark and light mode, beside a mark built from one lit piece and three steps of the ladder](docs/img/ladder.svg)
 
-Each mark comes from the product's world: Lyrate's riffled pages, Avia's tent, Tern's t and cursor, a comic's panels, a projector's beam. The build renders every mark four ways: a dark icon, a light icon, and a bare mark for dark and light pages. Lyrate and the Throw are the two exceptions to "one lit": their pieces fade at full strength from ink to the accent. The full rules are in [docs/marks.md](docs/marks.md).
+Each mark comes from the product's world: Lyrate's riffled pages, Avia's tent, Tern's t and cursor, Paperside's comic panels, Hocin's projector beam. The build renders every mark four ways: a dark icon, a light icon, and a bare mark for dark and light pages. Lyrate and Hocin are the two exceptions to "one lit": their pieces fade at full strength from ink to the accent. The full rules are in [docs/marks.md](docs/marks.md).
 
 ## Type
 

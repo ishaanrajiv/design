@@ -77,13 +77,13 @@ export const TERN = {
 const PAGE = "M-1 0C-4-20-4.5-38-3-50A3 3 0 0 1 3-50C4.5-38 4-20 1 0Z";
 
 export const MARKS = {
-  dish: (c) =>
+  homelab: (c) =>
     tile(
       `<g transform="scale(.09765625)"><path d="${DISH.dish}" fill="${c.ink}" fill-rule="evenodd"/><path d="${DISH.lit}" fill="${c.ink}" opacity="${c.dark ? 1 : 0.6}"/><path d="${DISH.active}" fill="${c.lit}"/><path d="${DISH.off}" fill="${c.dark ? "#3A352D" : mix(c.ink, under(c), 0.2)}"/></g>`,
       c,
     ),
 
-  face: (c) =>
+  otto: (c) =>
     tile(
       `<path d="M2.5 12.5A9.5 9.5 0 1 0 21.5 12.5A9.5 9.5 0 1 0 2.5 12.5ZM12 10.6L12 12.2A1.3 1.3 0 0 0 14.6 12.2L14.6 10.6A1.3 1.3 0 0 0 12 10.6ZM16.7 10.6L16.7 12.2A1.3 1.3 0 0 0 19.3 12.2L19.3 10.6A1.3 1.3 0 0 0 16.7 10.6Z" transform="translate(50 50) scale(2.75) translate(-12 -12.5)" fill="${c.ink}" fill-rule="evenodd"/>`,
       c,
@@ -99,27 +99,28 @@ export const MARKS = {
       c,
     ),
 
-  panels: (c) =>
+  paperside: (c) =>
     tile(
       `<rect x="48.5" y="19" width="24.5" height="20" rx="1.6" fill="${c.lit}"/><rect x="27" y="19" width="18" height="20" rx="1.6" fill="${c.ink}" opacity="${c.t.ladder[1]}"/><rect x="27" y="42.5" width="46" height="17.5" rx="1.6" fill="${c.ink}" opacity="${c.t.ladder[2]}"/><rect x="27" y="63.5" width="46" height="17.5" rx="1.6" fill="${c.ink}" opacity="${c.t.ladder[3]}"/>`,
       c,
     ),
 
-  // Avia keeps its own art: two PNG layers used as masks, recoloured.
+  // Avia keeps its own art: two PNG layers used as masks, recoloured. The lit layer is the whole
+  // tent and the shade layer its right face, so the shade is painted over the lit.
   avia: (c) => {
     const [m1, m2] = [id("m"), id("m")];
     return tile(
-      `<rect width="100" height="100" fill="${c.avia.shade}" mask="url(#${m2})"/><rect width="100" height="100" fill="${c.avia.lit}" mask="url(#${m1})"/>`,
+      `<rect width="100" height="100" fill="${c.avia.lit}" mask="url(#${m1})"/><rect width="100" height="100" fill="${c.avia.shade}" mask="url(#${m2})"/>`,
       c,
       `<mask id="${m1}"><image href="${c.avia.litPng}" width="100" height="100"/></mask><mask id="${m2}"><image href="${c.avia.shadePng}" width="100" height="100"/></mask>`,
     );
   },
 
-  // The Throw: a projector's beam landing on a slim lit screen. The beam narrows to the lens at
+  // Hocin's Throw: a projector's beam landing on a slim lit screen. The beam narrows to the lens at
   // the right, so it is also Play. Three even bands (13 wide, 4 apart, as is the gap to the
   // screen) run at full strength from an ink tip to the screen's accent: the second exception
   // to "one lit", after Lyrate (decisions.md, 2026-11-16).
-  throw: (c) => {
+  hocin: (c) => {
     const [x0, x1, H] = [32.5, 79.5, 27]; // the beam is 2H tall at x0 and closes at x1
     const h = (x) => (H * (x1 - x)) / (x1 - x0);
     const band = (a, b) => (b < x1 ? [[a, 50 - h(a)], [b, 50 - h(b)], [b, 50 + h(b)], [a, 50 + h(a)]] : [[a, 50 - h(a)], [b, 50], [a, 50 + h(a)]]);
@@ -131,20 +132,20 @@ export const MARKS = {
     );
   },
 
-  shelf: (c) =>
+  library: (c) =>
     tile(
       `<rect x="21" y="75" width="58" height="6" rx="3" fill="${c.ink}" opacity="${c.t.ladder[3]}"/><rect x="24" y="33" width="10" height="39" rx="3" fill="${c.ink}"/><rect x="37" y="26" width="10" height="46" rx="3" fill="${c.ink}" opacity="${c.t.ladder[2]}"/><rect x="50" y="37" width="9" height="35" rx="3" fill="${c.ink}" opacity="${c.t.ladder[3]}"/><rect x="61" y="27" width="9" height="45" rx="3" fill="${c.lit}" transform="rotate(13 61 72)"/>`,
       c,
     ),
 
-  cited: (c) =>
+  primer: (c) =>
     tile(
       `${[[29, 44, 0.6], [39, 50, 0.6], [59, 46, 0.6], [69, 30, 0.32]].map(([y, w, o]) => `<rect x="25" y="${y}" width="${w}" height="5.5" rx="2.75" fill="${c.ink}" opacity="${o}"/>`).join("")}<rect x="22" y="46" width="56" height="9" rx="4.5" fill="${c.lit}"/>`,
       c,
     ),
 
-  // A tyre in real proportion (wheel ≈ 0.57 of the tyre), no spokes, dark rubber in dark mode.
-  tyre: (c) => {
+  // Undercut's tyre, in real proportion (wheel ≈ 0.57 of the tyre), no spokes, dark rubber in dark mode.
+  undercut: (c) => {
     const [tyre, rim] = c.dark ? [0.24, 0.9] : [0.9, 0.6];
     return tile(
       `<path d="${ring(50, 50, 31, 18.6)}" fill="${c.ink}" fill-rule="evenodd" opacity="${tyre}"/><path d="${arc(26.6, 125, 235)}" fill="none" stroke="${c.lit}" stroke-width="3.6" stroke-linecap="round"/><path d="${arc(26.6, -55, 55)}" fill="none" stroke="${c.lit}" stroke-width="3.6" stroke-linecap="round"/><path d="${ring(50, 50, 16.8, 13.8)}" fill="${c.ink}" fill-rule="evenodd" opacity="${rim}"/><circle cx="50" cy="50" r="5" fill="${c.ink}" opacity="${rim * 0.6}"/>`,
@@ -154,7 +155,7 @@ export const MARKS = {
 
   // An open book seen from the front, its pages and cover dipping to the spine, with a bookmark
   // ribbon in Lyrate's sea glass (both are for reading).
-  book: (c) => {
+  books: (c) => {
     const half = (k, inner) => `<g transform="translate(50 0) skewY(${k}) translate(-50 0)">${inner}</g>`;
     return tile(
       half(10, `<rect x="19" y="72" width="31" height="5" rx="2.5" fill="${c.ink}" opacity="${c.t.ladder[3]}"/>`) +

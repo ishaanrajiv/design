@@ -4,10 +4,11 @@
 
 Everything committed here, including commit messages and PR text, is published on GitHub. Don't add:
 
-- names of products that haven't launched. The public products are **Lyrate**, **Avia**, **Tern** (the macOS terminal, [ishaanrajiv/tern](https://github.com/ishaanrajiv/tern)) and **the site**. A product becomes public when its app or repo is. Every other product goes by the name of its mark (Panels, Throw, Dish, Face, Shelf, Book, Cited line, Tyre) in tokens, keys, comments, docs and file names. If you know the real name, don't write it here.
 - details of private infrastructure: servers, hostnames, IPs, ports, paths outside this repo, other repositories, internal tools or services, or how they're run.
 - screenshots of apps or devices, or third-party images (photos, book covers, logos). Draw what you need in code, or describe it in words.
 - personal details beyond the copyright line, or secrets of any kind.
+
+Product names are fine. Every product goes by its own name in tokens, keys, comments, docs and file names: Lyrate, Avia, Tern (the macOS terminal, [ishaanrajiv/tern](https://github.com/ishaanrajiv/tern)), the site, Paperside, Hocin, Homelab, Otto, Library, Books, Primer and Undercut. A mark may have a name of its own (Lyrate's Riffle, Hocin's Throw). Naming a product doesn't make its details public: what it runs on, where, and how stay out.
 
 When unsure whether something belongs, leave it out and ask.
 
