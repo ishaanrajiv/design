@@ -91,6 +91,10 @@ public enum Design {
         public static let undercut = Color.design(light: 0x9E68FF, dark: 0xB58CFF)
         /// Undercut: the tint, for tab selection, toggles, progress and links (4.5:1 on light ground).
         public static let undercutTint = Color.design(light: 0x803AFF, dark: 0xB58CFF)
+        /// Proser: marks and graphics (3:1 on light ground).
+        public static let proser = Color.design(light: 0xD9608B, dark: 0xE79AB5)
+        /// Proser: the tint, for tab selection, toggles, progress and links (4.5:1 on light ground).
+        public static let proserTint = Color.design(light: 0xC62F64, dark: 0xE79AB5)
     }
 }
 

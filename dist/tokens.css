@@ -39,6 +39,8 @@
   --ds-primer-tint: #5FBFA8;
   --ds-undercut: #B58CFF;
   --ds-undercut-tint: #B58CFF;
+  --ds-proser: #E79AB5;
+  --ds-proser-tint: #E79AB5;
   --ds-night: #0B0A09;
   --ds-night-high: #1C1A17;
   --ds-paper: #F3EBDD;
@@ -86,6 +88,8 @@
     --ds-primer-tint: #307867;
     --ds-undercut: #9E68FF;
     --ds-undercut-tint: #803AFF;
+    --ds-proser: #D9608B;
+    --ds-proser-tint: #C62F64;
   }
 }
 :root[data-theme="light"] {
@@ -126,4 +130,6 @@
   --ds-primer-tint: #307867;
   --ds-undercut: #9E68FF;
   --ds-undercut-tint: #803AFF;
+  --ds-proser: #D9608B;
+  --ds-proser-tint: #C62F64;
 }

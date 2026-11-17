@@ -9,7 +9,7 @@ Every mark is drawn on a 100×100 grid and follows four rules.
 
    ![The opacity ladder in dark and light mode, beside a mark built from one lit piece and three steps of the ladder](img/ladder.svg)
 3. **Live area.** The mark sits in the middle ~62% of the tile (roughly 19 to 81 on the grid).
-4. **Tells you what it is.** Each mark comes from the product's world: Lyrate's riffled pages, Avia's tent, Tern's t and cursor, the site's initials, Paperside's comic panels, Hocin's projector beam, Homelab's dish of lights, Library's shelf, Books' open book, Primer's cited passage, Undercut's tyre.
+4. **Tells you what it is.** Each mark comes from the product's world: Lyrate's riffled pages, Avia's tent, Tern's t and cursor, the site's initials, Paperside's comic panels, Hocin's projector beam, Homelab's dish of lights, Library's shelf, Books' open book, Primer's cited passage, Undercut's tyre, Proser's two voices.
 
 ## Four renderings
 

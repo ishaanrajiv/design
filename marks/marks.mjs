@@ -183,4 +183,12 @@ export const MARKS = {
       `<g transform="scale(.09765625)"><path d="${TERN.crossbar}" fill="${c.ink}" opacity="${c.t.ladder[1]}"/><path d="${TERN.stem}" fill="${c.ink}"/><path d="${TERN.cursor}" fill="${c.lit}"/></g>`,
       c,
     ),
+
+  // Proser: two voices. A pair of opening quotation marks, each a round with its tail, for a
+  // story written by two hands: mine in ink, the agent's lit (decisions.md, 2026-11-17).
+  proser: (c) => {
+    const quote = (cx, fill) =>
+      `<circle cx="${cx}" cy="62.5" r="11.5" fill="${fill}"/><path d="M${cx - 10} 62.5C${cx - 11} 47.5 ${cx - 4} 36.5 ${cx + 8} 30.5" fill="none" stroke="${fill}" stroke-width="8.5" stroke-linecap="round"/>`;
+    return tile(quote(36, c.ink) + quote(66, c.lit), c);
+  },
 };
