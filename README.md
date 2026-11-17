@@ -4,7 +4,7 @@ The design language behind my apps: how their marks are built, which colour does
 
 ![Every mark, as its dark and light app icon, grouped into market apps, the site and lab tools](docs/img/marks.svg)
 
-Lyrate, Avia and Tern are out; Paperside and Hocin haven't launched yet. The lab tools (Homelab, Otto, Library, Books, Primer and Undercut) are only for me.
+Lyrate, Avia and Tern are out; Paperside and Hocin haven't launched yet. The lab tools (Homelab, Otto, Library, Books, Primer, Undercut and Proser) are only for me.
 
 ## The system in six lines
 

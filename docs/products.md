@@ -18,5 +18,6 @@ Market apps ship publicly and must be told apart from each other. Lab tools are 
 | Books | lab | `#6CC4BE` | `#3D9791` | `#307772` | `#E4EDE8` | 9.8:1 | An open book, its pages and cover dipping to the spine, with a bookmark ribbon in the accent. Shares Lyrate's sea glass: both are for reading. |
 | Primer | lab | `#5FBFA8` | `#3D9782` | `#307867` | `#E2EDE5` | 9.1:1 | The cited line: a page of lines with one cited passage lit. |
 | Undercut | lab | `#B58CFF` | `#9E68FF` | `#803AFF` | `#EEE5F1` | 7.8:1 | A tyre in dark rubber with its compound band in the accent. |
+| Proser | lab | `#E79AB5` | `#D9608B` | `#C62F64` | `#F5E7E7` | 9.2:1 | Two voices: a pair of opening quotation marks, mine in ink and the agent's in rose. |
 
 Each mark's files are in `marks/out/<product>/`: `icon-dark.svg`, `icon-light.svg`, `mark-dark.svg`, `mark-light.svg`.

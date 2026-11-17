@@ -2,6 +2,14 @@
 
 What we decided, why, and what we turned down. Newest first. A product goes by its name; its mark has a name of its own (Lyrate's Riffle, Hocin's Throw).
 
+## 2026-11-17 (latest): Proser joins, with two voices
+
+- **Why:** Proser is where an agent and I write fiction together. Its first icon, a rose quill feather, came from before it joined the language: a drawing rather than pieces, with veins cut into it, and it smudged below 29 px.
+- **Mark:** **Two voices**, a pair of opening quotation marks, each a round with its tail. Mine is in ink, the agent's is lit: a story written by two hands, and the quote that opens dialogue. Two pieces, all curves, which keeps it apart from the lab tools' bars and rectangles.
+- **Accent:** **rose** `#E79AB5`, the colour Proser's interface already uses. Rose was turned down twice for market apps because it sits about 25° from the shared critical coral. Proser is a lab tool, so the overlap is allowed, and its interface keeps destructive actions in coral, not rose.
+- **Tier:** lab.
+- Turned down, as marks: a **pilcrow** (the bowl lit beside two stems; the closest second, but it says "paragraph" rather than "written together"), a **nib** over a lit line (upright, it read as a shield; tilted, the line and the nib echoed Tern's t and cursor) and the **quill** itself (an illustration, not pieces).
+
 ## 2026-11-17 (later still): every product goes by its name
 
 - **Why:** the repo went public with every product that hadn't launched named after its mark (Panels, Throw, Dish, Face, Shelf, Book, Cited line, Tyre). Two names for each product made the guide harder to read than the names were worth hiding.

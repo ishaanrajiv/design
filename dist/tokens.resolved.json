@@ -256,6 +256,20 @@
         "lightTileLit": "#9B63FF"
       },
       "contrastOnDark": 7.8
+    },
+    "proser": {
+      "name": "Proser",
+      "tier": "lab",
+      "accent": "#E79AB5",
+      "mark": "Two voices: a pair of opening quotation marks, mine in ink and the agent's in rose.",
+      "shades": {
+        "dark": "#E79AB5",
+        "lightGraphic": "#D9608B",
+        "lightText": "#C62F64",
+        "lightTile": "#F5E7E7",
+        "lightTileLit": "#D85C88"
+      },
+      "contrastOnDark": 9.2
     }
   }
 }
