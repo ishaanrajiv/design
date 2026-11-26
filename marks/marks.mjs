@@ -5,7 +5,7 @@
 //   c.lit     the lit unit's colour (the accent, or its light shade)
 //   c.ink     the other units' colour (Paper in dark, Navy in light)
 //   c.dark    true for the dark appearance
-//   c.ground  "night", "none" or a tile colour (light icons); used to cut gaps
+//   c.ground  "night", "none" or a tile colour (light icons)
 //   c.t       the tokens' `marks` block (night, paper, navy, ladder…)
 //   c.avia    { lit, shade, litPng, shadePng } for Avia's art layers
 
@@ -22,9 +22,6 @@ export function tile(inner, c, defs = "") {
   const hair = c.ground === "night" ? "#FFFFFF" : "#000000";
   return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><linearGradient id="${g}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="${c.t.nightHigh}"/><stop offset="1" stop-color="${c.t.night}"/></linearGradient>${defs}</defs><rect width="100" height="100" rx="22.5" fill="${fill}"/><rect x=".5" y=".5" width="99" height="99" rx="22" fill="none" stroke="${hair}" stroke-opacity=".08"/>${inner}</svg>`;
 }
-
-/** The colour of the page or tile under the mark, for cutting gaps. */
-const under = (c) => (c.ground === "night" ? c.t.night : c.ground === "none" ? (c.dark ? "#080808" : "#F2EDED") : c.ground);
 
 /** `a` over `b` at opacity `t`, as a solid hex. */
 export function mix(a, b, t) {
@@ -58,12 +55,22 @@ export const roundPoly = (pts, r) => {
     .join("")}Z`;
 };
 
-// The dish, drawn on a 1024 grid.
-const DISH = {
-  dish: "M177.15,512 A334.85,334.85 0 1 0 846.85,512 A334.85,334.85 0 1 0 177.15,512 Z M222.21,512 A289.79,289.79 0 1 0 801.79,512 A289.79,289.79 0 1 0 222.21,512 Z",
-  lit: "M435.20,328.01 A36.86,36.86 0 0 1 478.92,356.40 L489.14,404.48 A36.86,36.86 0 0 1 460.75,448.20 L412.67,458.42 A36.86,36.86 0 0 1 368.95,430.03 L358.73,381.95 A36.86,36.86 0 0 1 387.12,338.23 Z M612.47,321.46 A36.86,36.86 0 0 1 643.85,363.09 L637.01,411.77 A36.86,36.86 0 0 1 595.37,443.14 L546.70,436.30 A36.86,36.86 0 0 1 515.32,394.67 L522.16,345.99 A36.86,36.86 0 0 1 563.80,314.62 Z M527.50,475.46 A36.86,36.86 0 0 1 561.01,515.40 L556.73,564.37 A36.86,36.86 0 0 1 516.79,597.88 L467.83,593.59 A36.86,36.86 0 0 1 434.32,553.66 L438.60,504.69 A36.86,36.86 0 0 1 478.54,471.18 Z",
-  active: "M665.00,478.46 A36.86,36.86 0 0 1 706.64,509.83 L713.48,558.51 A36.86,36.86 0 0 1 682.10,600.14 L633.43,606.98 A36.86,36.86 0 0 1 591.79,575.61 L584.95,526.93 A36.86,36.86 0 0 1 616.33,485.30 Z",
-  off: "M440.12,597.59 A36.86,36.86 0 0 1 466.97,642.28 L455.08,689.97 A36.86,36.86 0 0 1 410.39,716.82 L362.70,704.93 A36.86,36.86 0 0 1 335.85,660.25 L347.74,612.55 A36.86,36.86 0 0 1 392.43,585.70 Z M586.42,612.49 A36.86,36.86 0 0 1 626.36,646.00 L630.64,694.97 A36.86,36.86 0 0 1 597.13,734.90 L548.17,739.19 A36.86,36.86 0 0 1 508.23,705.68 L503.95,656.71 A36.86,36.86 0 0 1 537.46,616.78 Z",
+/** A rounded rectangle as a path, clockwise; inside another piece's path it cuts a hole (evenodd). */
+const pill = ([x, y, w, h], r) =>
+  `M${x + r} ${y}H${x + w - r}A${r} ${r} 0 0 1 ${x + w} ${y + r}V${y + h - r}A${r} ${r} 0 0 1 ${x + w - r} ${y + h}H${x + r}A${r} ${r} 0 0 1 ${x} ${y + h - r}V${y + r}A${r} ${r} 0 0 1 ${x + r} ${y}Z`;
+
+// Homelab's Home rack, on the 100 grid: a roof over two server blades. The top blade's status
+// light is lit, sitting in a cut a little bigger than itself; the lower blade's light is off, a
+// slot cut through it. [x, y, w, h] for each rectangle. Homelab's own icon scripts draw the same
+// numbers (decisions.md, 2026-11-26).
+export const HOMELAB = {
+  roof: [[50, 20.5], [83, 45.5], [17, 45.5]],
+  roofCorner: 4,
+  blades: [[25, 49.5, 50, 13], [25, 66.5, 50, 13]],
+  bladeCorner: 3.5,
+  cut: [56, 53.5, 13, 5],
+  light: [57.5, 54.5, 10, 3],
+  slot: [57.5, 71.5, 10, 3],
 };
 
 // Tern: the t's stem with its hooked foot, its crossbar, and the cursor, on a 1024 grid.
@@ -77,11 +84,19 @@ export const TERN = {
 const PAGE = "M-1 0C-4-20-4.5-38-3-50A3 3 0 0 1 3-50C4.5-38 4-20 1 0Z";
 
 export const MARKS = {
-  homelab: (c) =>
-    tile(
-      `<g transform="scale(.09765625)"><path d="${DISH.dish}" fill="${c.ink}" fill-rule="evenodd"/><path d="${DISH.lit}" fill="${c.ink}" opacity="${c.dark ? 1 : 0.6}"/><path d="${DISH.active}" fill="${c.lit}"/><path d="${DISH.off}" fill="${c.dark ? "#3A352D" : mix(c.ink, under(c), 0.2)}"/></g>`,
+  // A roof over two blades: home and lab in one figure. Roof in full ink, the blades a step and
+  // two steps down, the top blade's light lit (decisions.md, 2026-11-26).
+  homelab: (c) => {
+    const H = HOMELAB;
+    const [top, bottom] = H.blades;
+    return tile(
+      `<path d="${roundPoly(H.roof, H.roofCorner)}" fill="${c.ink}"/>` +
+        `<path d="${pill(top, H.bladeCorner)}${pill(H.cut, H.cut[3] / 2)}" fill="${c.ink}" fill-rule="evenodd" opacity="${c.t.ladder[1]}"/>` +
+        `<path d="${pill(bottom, H.bladeCorner)}${pill(H.slot, H.slot[3] / 2)}" fill="${c.ink}" fill-rule="evenodd" opacity="${c.t.ladder[2]}"/>` +
+        `<path d="${pill(H.light, H.light[3] / 2)}" fill="${c.lit}"/>`,
       c,
-    ),
+    );
+  },
 
   otto: (c) =>
     tile(

@@ -185,7 +185,7 @@
       "name": "Homelab",
       "tier": "lab",
       "accent": "#BBD07C",
-      "mark": "The dish: a ring, three lit dots, one in the accent, two off.",
+      "mark": "The Home rack: a roof over two server blades, the top blade's status light lit and the lower one's off.",
       "shades": {
         "dark": "#BBD07C",
         "lightGraphic": "#7A9134",
