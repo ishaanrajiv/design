@@ -12,7 +12,7 @@ Market apps ship publicly and must be told apart from each other. Lab tools are 
 | Site | site | `#7DBEE8` | `#2690D4` | `#1E71A7` | `#E6ECEE` | 9.9:1 | The initials ir in three pieces: the i's stem, an r drawn as one hooked stroke, and the i's dot in the accent. |
 | Paperside | market | `#E2462F` | `#E2462F` | `#CA321C` | `#F4DCD4` | 4.9:1 | Four comic panels; the top-right one lit. |
 | Hocin | market | `#84A3F4` | `#5A83F0` | `#2B60EC` | `#E7E9F0` | 8.1:1 | The Throw: a projector's beam in three even bands, running at full strength from an ink tip to the screen's blue, landing on a slim lit screen. The beam is also Play. |
-| Homelab | lab | `#BBD07C` | `#7A9134` | `#607329` | `#EFEFDF` | 11.9:1 | The dish: a ring, three lit dots, one in the accent, two off. |
+| Homelab | lab | `#BBD07C` | `#7A9134` | `#607329` | `#EFEFDF` | 11.9:1 | The Home rack: a roof over two server blades, the top blade's status light lit and the lower one's off. |
 | Otto | lab | none | | | | | A cream head with two pill eyes. Lives in Homelab; not an app icon. |
 | Library | lab | `#D4B06A` | `#AC8232` | `#886727` | `#F2EADC` | 9.7:1 | A shelf: three spines stepping down, the fourth leaning in the accent. |
 | Books | lab | `#6CC4BE` | `#3D9791` | `#307772` | `#E4EDE8` | 9.8:1 | An open book, its pages and cover dipping to the spine, with a bookmark ribbon in the accent. Shares Lyrate's sea glass: both are for reading. |

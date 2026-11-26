@@ -2,7 +2,16 @@
 
 What we decided, why, and what we turned down. Newest first. A product goes by its name; its mark has a name of its own (Lyrate's Riffle, Hocin's Throw).
 
-## 2026-11-17 (latest): Proser joins, with two voices
+## 2026-11-26: Homelab's mark becomes the Home rack
+
+- **Why change:** the dish (a petri dish of lights) never landed. It was a pun on "lab", its six small cells blurred together below 29 px, and nothing in it said "home".
+- **Mark:** the **Home rack**, a roof over two server blades: home and lab in one figure. The roof is in full ink and the blades step down the ladder (0.9, 0.6). The top blade's status light is a short pill, lit in lime, sitting in a cut a little bigger than itself; the lower blade's light is off, a slot cut through it. The cuts are holes in the blades, so the tile or page shows through.
+- **Accent:** lime `#BBD07C`, kept.
+- **Grammar:** the ring is gone, so "a ring or a band when it is the thing itself" now covers only Undercut's tyre.
+- Turned down, as marks: **Rack** (three blades, the top light lit; the clearest server, and the icon of every server-admin app), **Lights at home** (a roof over three status lights; the roof read as a caret), **The box** (the computer from the front, with a lid, a vent and feet; a radio or a projector when small, which is Hocin's world), **Stack** (three isometric slabs, the top one lit; every app's "layers" glyph), **Flask** (an Erlenmeyer flask with lime liquid; strong, but it keeps the pun and says "science" rather than "home") and the **dish redrawn** with fewer, bigger pieces.
+- Turned down, of the Home rack: a round light with a gap ring (it reads as an LED, but it is smaller than the pill at 20 px), the whole top blade lit (the most visible, but it loses the light), a roof drawn as an open stroke, blades as wide as the roof (one house shape, but heavier), and the roof dimmed to 0.6 with the top blade in full ink.
+
+## 2026-11-17: Proser joins, with two voices
 
 - **Why:** Proser is where an agent and I write fiction together. Its first icon, a rose quill feather, came from before it joined the language: a drawing rather than pieces, with veins cut into it, and it smudged below 29 px.
 - **Mark:** **Two voices**, a pair of opening quotation marks, each a round with its tail. Mine is in ink, the agent's is lit: a story written by two hands, and the quote that opens dialogue. Two pieces, all curves, which keeps it apart from the lab tools' bars and rectangles.
